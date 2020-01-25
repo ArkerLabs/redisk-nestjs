@@ -7,7 +7,7 @@ Module for using [Redisk](https://github.com/ArkerLabs/redisk) in NestJS.
 
 ## Getting started
 ```bash
-npm install redisk-nestjs --save
+npm install redisk-nestjs redisk --save
 ```
 
 
