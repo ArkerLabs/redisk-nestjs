@@ -16,6 +16,7 @@ export class RediskModule {
     static forRoot(options: RediskOptions): DynamicModule {
         return {
           module: RediskModule,
+          global: true,
           providers: [
             {
               provide: Redisk,

@@ -24,7 +24,7 @@ import { RediskModule } from 'redisk-nestjs';
     }),
   ],
 })
-export class ApplicationModule {}
+export class AppModule {}
 ```
 
 

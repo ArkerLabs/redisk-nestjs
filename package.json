@@ -1,6 +1,6 @@
 {
   "name": "redisk-nestjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NestJS module for Redisk.",
   "main": "index.js",
   "scripts": {
