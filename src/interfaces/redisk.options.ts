@@ -1,3 +1,7 @@
 export interface RediskOptions {
-    url: string;
+    url?: string;
+    host?: string;
+    port?: number;
+    db?: number;
+    password?: string;
 }

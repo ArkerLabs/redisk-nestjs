@@ -1,11 +1,9 @@
 import { Module, DynamicModule } from '@nestjs/common';
-import { Redisk, Metadata } from 'redisk';
+import { Redisk } from 'redisk';
 import { RediskOptions } from './interfaces';
-import * as redis from 'redis';
 
 @Module({
     providers: [
-        Metadata,
         Redisk,
     ],
     exports: [
@@ -20,7 +18,7 @@ export class RediskModule {
           providers: [
             {
               provide: Redisk,
-              useValue: new Redisk(new Metadata(), redis.createClient({url: options.url})),
+              useValue: Redisk.init(options),
             },
           ],
           exports: [
