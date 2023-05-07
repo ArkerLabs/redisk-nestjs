@@ -12,7 +12,7 @@
     "publish:next": "npm publish --access public --tag next"
   },
   "devDependencies": {
-    "@nestjs/common": "6.10.14",
+    "@nestjs/common": "9.4.0",
     "redisk": "^2.0.0"
   },
   "repository": {
